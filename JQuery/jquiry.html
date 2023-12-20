@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+
+        .main *
+         {
+            border: 3px solid gray;
+            padding: 35px;
+            display:block;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <h3>Q.1 What is jQuery ?</h3>
+
+    <ul>
+        <li><p>jQuery is a lightweight, "write less, do more", JavaScript library.</p></li>
+        <li><p>it's devloper by The jQuery Team,on 26 August 2006</p></li>
+        <li><p>The purpose of jQuery is to make it much easier to use JavaScript on your website.</p></li>
+    </ul>
+
+    <h3> Q.2 How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+        Jquery, JQuery Animation?</h3>
+
+        ==>add css
+
+        <h1 id="h1">Jquery</h1>
+        <button id="b1">addCSS</button>
+        <button id="b2">RemoveCSS</button>
+
+<script>
+$("#b1").click(
+    function ()
+    {
+        $("#h1").css("color","red")
+    }
+)
+
+$("#b2").click(
+    function ()
+    {
+        $("#h1").css("color","")
+    }
+)
+
+</script>
+
+    <!-- description:-
+
+    ==> first attech a jquery link in cdn
+    ==> get the id JQueiry
+    ==> apply to css style in jquery
+    ==> call the functinon inside the click attribute in jquiry -->
+
+
+    <p>==>How to Add Class and Remove Class in Jquery</p>
+
+    <p><i>Using the addClass() and removeClass() methods</i></p>
+
+
+
+    
+
+    <h3>Q.3 How to create slider with animation ?</h3>
+
+    <ul>
+        <li>Step 1: Come up with a strategy for the slider</li>
+           <li> Step 2: Update the background image in each slide</li>
+          <li>  Step 3: Update the text layers in each slide</li>
+          <li>  Step 4: Edit the button text and design in each slide</li>
+           <li> Step 5: Edit the slider navigation</li>
+    </ul>
+
+
+    <h3>Q.4 Event bubbling tickling example ?</h3>
+
+
+    <ul>
+        <li>is event me perent ke thuru work hota hai.</li>
+        <li>event fire on parent and call the children</li>
+    </ul>
+
+    <p>Event bubbling they are more than method
+        <ul>
+            <li>parents()  :- sabhi parents ko target karega</li>
+            <li>parent() :- onlu one parent(main) ko target karega.</li>
+            <li>parents Until("any name of perent")</li>
+            <li>children() :- sabhi children ko target karega.</li>
+            <li>find()</li>
+        </ul>
+        </p>
+    
+
+    
+
+
+    <p>is se app  return value bhi de sakte he jese ki child ko call karvaya or perent ko tag karna etc.</p>
+
+
+    <div class="main">
+        <div class="gp1">grand-father1
+            <div class="gp2">grand-fahter2
+                <div class="father">father
+                    <div class="mother">mother
+                        <span>child</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $(".main").children().css("color","green")
+        $(".mother").children().css("background","blue")
+        $(".gp2").children().css("background","yellow")
+        $(".father").parent().css("background","black")
+        $(".gp1").parent().css("background","red")
+
+    </script>
+
+
+</body>
+
+</html>
