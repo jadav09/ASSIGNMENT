@@ -1,0 +1,97 @@
+.marks {
+    display: flex;
+
+}
+
+.sub {
+    margin: 0px 50px;
+}
+
+.d1
+{
+    height: 150px;
+    width: 150px;
+
+}
+
+
+/* slider css********** */
+
+
+
+.swiper {
+    margin-top: 100px;
+    padding-bottom: 60px !important;
+    height: 250px;
+    background-color: gray;
+}
+
+.swiper .swiper-wrapper {
+    align-items: center;
+}
+
+.swiper .swiper-slide {
+    border-radius: 10px;
+    height: 180px !important;
+    transition: 0.2s;
+}
+
+.swiper .swiper-slide.active {
+    height: 230px !important;
+}
+
+.swiper .prev,
+.swiper .next {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    /* top: 60%; */
+    /* transform: translateY(-100%); */
+    opacity: 0.5;
+    transition: 0.2s;
+    /* background-color: red; */
+    color: #000;
+}
+
+.swiper .prev:hover,
+.swiper .next:hover {
+    opacity: 1;
+}
+
+.swiper .prev svg,
+.swiper .next svg {
+    width: 40px;
+    height: 40px;
+}
+
+.swiper .prev svg path,
+.swiper .next svg path {
+    fill: #fff;
+}
+
+ .swiper .prev {
+    left: 41%;
+}
+
+.swiper .next {
+    right: 41%;
+} 
+
+.swiper .pagination {
+    margin-left: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 1;
+
+}
+
+.swiper .pagination span {
+    font-size: 0;
+    opacity: 1;
+    margin: 0px 6px !important;
+    border: 1px solid #fff;
+    
+}
+

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="js assingment.css">
+
+</head>
+
+<body>
+
+    <h3> Q.1 What is JavaScript?</h3>
+
+    <p>==>JavaScript is the Programming Language for the Web.</p>
+    <p>==> JavaScript can update and change both HTML and CSS.</p>
+    <p>==>JavaScript can calculate, manipulate and validate data.</p>
+    <p>==>it’s unique because it can run directly in your browser, not just on a server.</p>
+
+    <br><br>
+
+
+    <h3> Q.2 What is the use of isNaN function?</h3>
+
+    <p>==>isNaN() method returns true if a value is Not-a-Number.</p>
+    <p>Nan = Not an Number</p>
+    <p>==>isNaN() converts the value to a number before testing it.</p>
+
+
+    <b>examples:-</b>
+
+    <input type="text" name="" id="nan" placeholder="type number">*
+    <input type="text" name="" id="nan2" placeholder="type text">
+    <button onclick="get()">get the NaN value</button>
+    <br>
+    <b>your answer is:- </b><span id="nan_res"><b></b></span>
+
+    <script>
+
+        // <!-- get the id -->
+
+        nan_tag = document.getElementById("nan")
+        nan2_tag = document.getElementById("nan2")
+
+        function get() {
+            res_tag = document.getElementById("nan_res").innerHTML = nan_tag.value * nan2_tag.value
+
+        }
+    </script>
+
+    <br><br><br><br>
+
+    <h3>Q.3 What is negative Infinity?</h3>
+
+    <p>you can any number use to maltiple in to two your answer is nagative </p>
+    <p>The negative infinity in JavaScript is a constant value that is used to represent a value that is the lowest
+        available.</p>
+    <p>This means that no other number is lesser than this value. It can be generated using a self-made function or by
+        an arithmetic operation.</p>
+
+    <b>examples:-</b>
+    <br><br>
+
+
+    <button onclick="geekPositiveInfinity()">
+        Generate negative infinity
+    </button>
+
+    <p id="geek"></p>
+    <p id="nag"></p>
+
+    <script>
+        function geekPositiveInfinity() {
+            n = (-2) * 2;
+            document.getElementById("geek").innerHTML = n;
+
+            y = (-Number.MAX_VALUE) * 2;
+            document.getElementById("nag").innerHTML = y;
+
+        }
+    </script>
+
+    <br><br><br>
+
+    <h3> Q.4 Which company developed JavaScript?</h3>
+
+    <p>JavaScript was created at Netscape Communications by Brendan Eich in 1995.</p>
+    <p> Netscape and Eich designed JavaScript as a scripting language for use with the company's flagship web browser,
+        Netscape Navigator.
+    </p>
+
+    <br><br><br>
+
+    <h3> Q.5 What are undeclared and undefined variables?</h3>
+
+    <p>Undeclared variables are those that have not been declared or defined in the current scope, while undefined
+        variables are those that have been declared but not given a value.
+    </p>
+
+    <p>ager hamne kai var nahi kiya or direct document main print krenge to console main undifinded var ayega. </p>
+
+    <p>withoud declared and try to print => it's undifinded & not get the value</p>
+
+    <br><br><br>
+
+    <h3>Q.6 Write the code for adding new elements dynamically?</h3>
+    <p>Creation of new element: New elements can be created in JS by using the createElement() method. </p>
+    <pre>
+    document.createElement(&lt;tagName&gt;);  
+        ==> Where &lt;tagName &gt; can be any HTML 
+         tagName like div, ul, button, etc.
+        
+        ==>newDiv element has been created
+        For Eg: let newDiv = document.createElement("div");
+</pre>
+
+    <br><br><br>
+
+    <h3>Q.7 What is the difference between ViewState and SessionState?</h3>
+
+    <p>View state and Session state are two types of state management techniques that help developers share information
+        between different UI elements and interfaces.</p>
+
+
+    <table border="1" style="text-align: center; font-size: 20px;">
+        <tr>
+            <th>View state</th>
+            <th>Session state</th>
+        </tr>
+
+        <tr>
+            <td>State management is on the client side.</td>
+            <td>State management is on the server side.</td>
+        </tr>
+
+        <tr>
+            <td>Data is accessible within the same web page.</td>
+            <td>Data is accessible from other web pages of the website.</td>
+        </tr>
+
+        <tr>
+            <td>Loss of information occurs when different web page is loaded.</td>
+            <td>Loss of information occurs due to timeout.</td>
+
+        </tr>
+
+        <tr>
+            <td>Data is stored in a hidden field of the same web page.</td>
+            <td>Data is stored in sessions and cookies.</td>
+        </tr>
+
+        <tr>
+            <td>It's less secure.</td>
+            <td>It's more secure.</td>
+        </tr>
+    </table>
+
+
+    <br><br><br>
+
+    <h3>Q.8 What is === operator?</h3>
+
+    <p>=== (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values
+        which are not of a similar type.</p>
+    <p>This operator performs type casting for equality. If we compare 2 with “2” using ===, then it will return a false
+        value.</p>
+
+    <p>string or number ko triple equeals to se match karenge to answer false dega.</p>
+    <p>same comdition pe string or number dono check karega.</p>
+
+    <br><br><br>
+
+    <h3>Q.9 How can the style/class of an element be changed?</h3>
+
+    <p> We can change, add or remove any CSS property from an HTML element on the occurrence of any event with the help
+        of JavaScript. There are two common approaches that allow us to achieve this task.</p>
+    <p> Changing CSS with the help of the style property:- style.property</p>
+
+    <br><br> <br>
+
+
+
+    <h3>Q. 10 How to read and write a file using JavaScript?</h3>
+
+    <p>The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript.</p>
+    <p>The file is read using the fs.readFile() function, which is an inbuilt method. This technique reads the full file
+        into memory and stores it in a buffer</p>
+
+    <b>examples:-</b>
+
+<div>
+    <b>Syntax:</b><br>
+
+   <i>fs.readFile( file_name, encoding, callback_function )</i><br><br>
+
+   <i>fs.writeFile( file_name, data, options, callback )</i><br><br>
+
+   <i>==>filename: It contains the filename to be read, or the whole path if the file is saved elsewhere.</i><br>
+   <i>==>encoding: It stores the file’s encoding. ‘utf8’ is the default setting</i><br>
+   <i>==>callback function: This is a function that is invoked after the file has bee read. It requires two inputs:</i><br>
+   <i>==>data: The data that will be sent to the file is a string, Buffer, TypedArray, or DataView.</i><br>
+   <i>==>options: It’s a string or object that may be used to indicate optional output options. It includes three more parameters that may be selected.</i><br>
+   <i>==>callback: This function gets invoked when the method is run</i><br>
+
+</div>
+    <h3>Q.11 • What are all the looping structures in JavaScript?</h3>
+
+    <p>for - loops through a block of code a number of times</p>
+
+    <pre>
+    for (let i = 0; i < 5; i++) 
+    {
+        code/statement.....
+     }
+</pre>
+
+    <p>for/in - loops through the properties of an object</p>
+
+    <pre>
+ const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+for (let x in numbers) 
+{
+  txt += numbers[x];
+}
+</pre>
+
+    <p>for/of - loops through the values of an iterable object</p>
+
+    <pre>
+
+    let language = "JavaScript";
+
+let text = "";
+for (let x of language) 
+{
+text += x;
+}
+</pre>
+
+    <p>do/while - also loops through a block of code while a specified condition is true</p>
+
+    <pre>
+    do {
+        text += "The number is " + i;
+        i++;
+      }
+      while (i < 10);
+</pre>
+
+<br><br><br>
+
+<h3>Q.12 How can you convert the string of any base to an integer in JavaScript?
+</h3>
+
+<p>To convert a string to an integer parseInt(), Number(), and Unary operator (+) function is used in JavaScript. </p>
+
+<br><br><br>
+
+<h3>Q.13 What is the function of the delete operator?</h3>
+
+<p>The delete operator removes a property from an object.</p>
+<pre>
+
+    <b>syntax:-</b>
+    delete object
+ or
+delete object.property
+
+ or
+delete object['property']
+</pre>
+
+<br><br><br>
+
+<h3>Q.14 What are all the types of Pop up boxes available in JavaScript?</h3>
+<p>JavaScript has three kind of popup boxes.</p>
+<li>Alert box</li>
+<li>Confirm box</li>
+<li>Prompt box.</li>
+
+<br><br><br>
+
+<h3>Q.15 What is the use of Void (0)?
+</h3>
+<p>==> You might have occasionally came across “javascript:void(0)” in an HTML Document.</p>
+<p>==>It is often used when inserting an expression in a web page might produce some unwanted effect. </p>
+<p>==>To remove this effect, “javascript:void(0)” is used. This expression returns undefined primitive value</p>
+
+
+<br><br><br>
+
+<h3>Q.16 How can a page be forced to load another page in JavaScript?</h3>
+<p>Approach: We can use window. location property inside the script tag to forcefully load another page in Javascript</p>
+
+<pre>
+    <b>syntax</b>
+
+    &lt;script &gt;
+        window.location = "https://www.geeksforgeeks.org/"
+    &lt;script &gt;
+</pre>
+
+<br><br><br>
+
+<h3>Q.18 • What are the disadvantages of using innerHTML in JavaScript?</h3>
+
+<li>The use of innerHTML very slow:</li>
+<p> The process of using innerHTML is much slower as its contents as slowly built, also already parsed contents and elements are also re-parsed which takes time.</p>
+
+<li>Preserves event handlers attached to any DOM elements: </li>
+<p> The event handlers do not get attached to the new elements created by setting innerHTML automatically.</p>
+
+<li>Content is replaced everywhere: </li>
+<li>Appending to innerHTML is not supported:</li>
+<p>Usually, += is used for appending in JavaScript. But on appending to an Html tag using innerHTML, the whole tag is re-parsed.</p>
+
+
+<br><br><br>
+
+
+
+    <!-- task :01 ***************-->
+
+
+
+    <ul>
+        <li>
+            <h3>Create password field with show hide functionalities </h3>
+        </li>
+    </ul>
+
+Enter your password :- <input type="password" name="" id="pas"><br>
+<input type="checkbox" onclick="sw()"> show password
+
+
+
+    <!-- task :02******************** -->
+
+
+
+    <ul>
+        <li>
+            <h3>Create basic math operation in JS</h3>
+        </li>
+    </ul>
+
+
+    Enter 1st number: <input type="number" id="num1"><br><br>
+
+    Enter 2st number: <input type="number" id="num2">
+
+
+    <br><br>
+
+    <button onclick="add()">+</button>
+    <button onclick="mins()">-</button>
+    <button onclick="dev()">/</button>
+    <button onclick="mul()">*</button>
+    <button onclick="mod()">%</button> <br><br>
+
+    your answer is = <span id="sp1"></span>
+
+    <br><br>
+
+
+
+    <!-- task :03******************************* -->
+
+
+    <ul>
+        <li>
+            <h3>Create result</h3>
+        </li>
+    </ul>
+
+
+    <div class="result">
+
+        <h3>Marksheet For Information Technology</h3>
+
+
+        <div class="marks">
+            <div class="sub">
+
+                <span> 1. C Language</span><br><br>
+                <span> 2. C++ Language </span><br><br>
+                <span> 3. Database</span><br><br>
+                <span> 4. HTML</span><br><br>
+                <span> 5. CSS</span><br><br>
+                <span> 6. Php</span><br><br>
+                <span> 7. Core java</span><br><br>
+
+            </div>
+
+            <div class="inp">
+
+                <input type="number" name="" id="n1" onblur="jdv(n1)"><br><br>
+                <input type="number" name="" id="n2" onblur="jdv(n2)"><br><br>
+                <input type="number" name="" id="n3" onblur="jdv(n3)"><br><br>
+                <input type="number" name="" id="n4" onblur="jdv(n4)"><br><br>
+                <input type="number" name="" id="n5" onblur="jdv(n5)"><br><br>
+                <input type="number" name="" id="n6" onblur="jdv(n6)"><br><br>
+                <input type="number" name="" id="n7" onblur="jdv(n7)"><br><br>
+
+                <button onclick="cal()">result</button>
+            </div>
+
+
+        </div>
+
+        Total marsks:- 350/ <span id="ttl"> </span><br><br>
+        Percentage is : <span id="per"></span>%
+
+
+    </div>
+
+
+    <!-- task :- 04********************* -->
+
+
+    <ul>
+        <li>
+            <h3>Create a slider using JavaScri</h3>
+        </li>
+    </ul>
+
+
+    <div class="swiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide" style="background-color: red;"></div>
+            <div class="swiper-slide" style="background-color: purple;"></div>
+            <div class="swiper-slide" style="background-color: blue;"></div>
+            <div class="swiper-slide" style="background-color: chartreuse;"></div>
+            <div class="swiper-slide" style="background-color: black;"></div>
+            <div class="swiper-slide" style="background-color: orange;"></div>
+            <div class="swiper-slide" style="background-color: magenta;"></div>
+            <div class="swiper-slide" style="background-color: darkblue;"></div>
+            <div class="swiper-slide" style="background-color: powderblue;"></div>
+
+        </div>
+
+
+        <div class="prev">
+
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z" fill="#A99260" />
+            </svg>
+
+        </div>
+
+        <div class="next">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z"
+                    fill="#A99260" />
+            </svg>
+
+        </div>
+    </div>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    <script src="assingment.js"></script>
+
+
+
+</body>
+
+</html>
