@@ -1,0 +1,58 @@
+@media(max-width:1000px) {
+
+    .section2 .d1,
+    .section2 .d2 {
+        width: 90%;
+    }
+
+    .section5 .d2 .x {
+        width: 30%;
+    }
+
+    .section6 .d1,
+    .section7 .d1,
+    .f1 {
+        width: 45%;
+    }
+}
+
+
+
+
+@media(max-width:800px) {
+    .section1 .x {
+
+        width: 100%;
+    }
+
+    .section5 .d1 .x,
+    .f1 {
+        width: 90%;
+    }
+}
+
+
+
+
+@media(max-width:500px) {
+    .navbar ul li {
+        display: block;
+    }
+
+    .flag .d1,
+    .section5 .d2 .x,
+    .section6 .d1,
+    .section7 .d1 {
+        width: 90%;
+    }
+
+    .section1 .main2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .coffe {
+        background-size: cover;
+        height: 150px;
+    }
+}
