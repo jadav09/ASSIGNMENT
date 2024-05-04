@@ -1,0 +1,40 @@
+{
+  "details": [
+    {
+      "name": "sdg",
+      "price": "75546",
+      "procuct": "svbncn",
+      "id": "103f"
+    },
+    {
+      "id": "496b",
+      "name": "phone",
+      "price": "12000",
+      "procuct": "LG"
+    },
+    {
+      "id": "4074",
+      "name": "AASDF",
+      "price": "21121",
+      "procuct": "54545"
+    }
+  ],
+  "RegistraionDetails": [
+    {
+      "id": "1",
+      "firstname": "jadav",
+      "lastname": "dharmesh",
+      "email": "xyz@gmail.com",
+      "phone": "4653244651",
+      "password": "klasdf45465"
+    },
+    {
+      "id": "dd08",
+      "firstname": "sdfg",
+      "lastname": "sd",
+      "phone": "9410418",
+      "email": "a@gmail.com",
+      "password": "asfd"
+    }
+  ]
+}
